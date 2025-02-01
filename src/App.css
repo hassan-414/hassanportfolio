@@ -1,0 +1,38 @@
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #061d5e;  /* Dark Blue */
+  padding: 20px;
+}
+
+.navbar-left {
+  color: white;
+  font-size: 1.5em;
+  padding-left: 30px;
+}
+
+.navbar-right{
+  padding-right: 30px;
+
+}
+.navbar-right a {
+  color: white;  
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  
+}
+
+.navbar-right a:hover {
+  text-decoration: none;
+  color: #93c5fd;  /* Lighter Blue */
+}

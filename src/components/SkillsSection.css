@@ -1,0 +1,42 @@
+.skills-section {
+    padding: 100px;
+    background-color: #0a1a46; /* Blue background matching theme */
+    text-align: center;
+    color: white;
+  }
+  
+  .section-title {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: rgb(140, 0, 140); /* Purple heading color */
+    
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .skill-icon {
+    font-size: 3em;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1); /* Light translucent background for icons */
+    padding: 20px;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .skill-icon:hover {
+    transform: scale(1.1);
+    background-color: rgb(140, 0, 140); /* Purple background on hover */
+  }
+
+  .line{
+    border: none;
+    border-top: 3px solid rgb(140, 0, 140); /* Purple line */
+    margin-top: 0px;
+    width: 100%; /* Full width of the container */
+}
+  

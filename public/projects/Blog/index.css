@@ -1,0 +1,275 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+.header-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.jumbotron {
+  background-image: url("mac.jpg");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 60px;
+}
+
+.jumbotron .jumbotron-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding-left: 50px;
+  color: white;
+  height: 100%;
+}
+
+.jumbotron .jumbotron-content h3 {
+  font-size: 60px;
+}
+
+.jumbotron .jumbotron-content p {
+  font-size: 25px;
+}
+
+.jumbotron .jumbotron-content button {
+  padding: 10px;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar .nav-links ul li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+/* Card Section */
+.card-section-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.cards-container .card {
+  max-width: 250px;
+  box-shadow: 3px 5px 5px grey;
+}
+
+.cards-container .card img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.cards-container .card .card-text-and-button {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cards-container .card .card-text-and-button button {
+  padding: 8px 10px;
+  border-radius: 5px;
+  background: lightgray;
+  border: none;
+  cursor: pointer;
+}
+
+.cards-container .card .card-text-and-button button:hover {
+  background: darkgray;
+  color: white;
+  transition: 0.5s;
+}
+
+/* Price Section */
+.price-section-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: darkgray;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.price-card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.price-card-container .price-card {
+  max-width: 350px;
+  border: 1px solid darkgray;
+  width: 100%;
+  margin-top: 25px;
+  min-width: 150px;
+}
+
+.price-card-container .price-card .price-header {
+  background: black;
+  width: 100%;
+}
+
+.price-card-container .price-card .price-header h3 {
+  text-align: center;
+  padding: 30px 60px;
+  color: white;
+}
+
+.price-card-container .price-card .price-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+
+.price-card-container .price-card .price-list span {
+  width: 100%;
+  text-align: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid lightgray;
+}
+
+.price-card-container .price-card .price-list .price-number {
+  padding: 25px 40px;
+}
+
+.price-card-container .price-card .price-bottom {
+  padding: 25px 10px;
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+.price-card-container .price-card .price-bottom button {
+  padding: 15px 30px;
+  background: #000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.price-card-container .price-card .price-bottom button:hover {
+  background: darkgray;
+  color: black;
+  transition: 0.5s;
+}
+
+.price-card-container .pro-price-card {
+  margin-top: 0;
+}
+
+.price-card-container .pro-price-card .price-header {
+  background: red;
+  padding: 25px 30px;
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  .navbar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  /* Jumbotron */
+  .jumbotron .jumbotron-content h3 {
+    font-size: 35px;
+  }
+
+  .jumbotron .jumbotron-content p {
+    font-size: 18px;
+  }
+
+  .jumbotron .jumbotron-content button {
+    padding: 8px 15px;
+  }
+
+  /* Card Section */
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-container .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Price Section */
+  .price-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price-card-container .price-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .price-card-container .price-card .price-header h3 {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Jumbotron */
+  .jumbotron .jumbotron-content h3 {
+    font-size: 28px;
+  }
+
+  .jumbotron .jumbotron-content p {
+    font-size: 16px;
+  }
+
+  .price-card-container .price-card {
+    width: 100%;
+    margin-top: 15px;
+  }
+}

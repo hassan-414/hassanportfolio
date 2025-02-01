@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: black; 
+}
+
+.logo img {
+    height: 130px; 
+    width: auto; 
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; 
+    flex: 1; 
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px; 
+    font-family: Arial, sans-serif;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid rgb(222, 215, 215);
+    color: greenyellow;
+}
+
+.why-choose {
+    padding: 50px 0;
+    text-align: center;
+    background-color:ghostwhite;
+}
+
+.why-choose h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    color: #333; 
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature {
+    text-align: center;
+    flex-basis: calc(50% - 30px);
+    padding: 20px 0;
+    border-bottom: 2px solid #e7cb7e;
+}
+
+.feature p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+    font-weight: 600;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-left img {
+    height: 150px; 
+}
+
+.footer-center {
+    text-align: center;
+    flex: 1;
+}
+
+.footer-right {
+    text-align: right;
+    font-size: 100px;
+}
+
+.footer-right p {
+    margin: 5px 0;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="D:\KIT Web Dev Course\JS Task\index.html" class="logo">
+            <img src="assets/logo.png"  alt="Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="D:\KIT Web Dev Course\JS Task\index.html">Home</a></li>
+            <li><a href="D:\KIT Web Dev Course\JS Task\about-us.html">About</a></li>
+            <li><a href="D:\KIT Web Dev Course\JS Task\contact.html">Contact</a></li>
+            <li><a href="D:\KIT Web Dev Course\JS Task\shop.html">Shop</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="why-choose">
+        <h2>About Us</h2>
+        <div class="features">
+            <div class="feature">
+                <p>Premium Quality Watches.</p>
+            </div>
+            <div class="feature">
+                <p>Heavy weight of Watches.</p>
+            </div>
+            <div class="feature">
+                <p>Fast / Free Shipping</p>
+            </div>
+            <div class="feature">
+                <p>Excellent Customer Support</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="Watchistaan Logo">
+                </a>
+            </div>
+            <div class="footer-center">
+                <p>Follow us for the latest updates</p> 
+            </div>
+            <div class="footer-right">
+                <p>Email: info@watchistaan.com</p>
+                <p>Number: 03002327711</p>
+                <p>&copy; 2024 Watchistaan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

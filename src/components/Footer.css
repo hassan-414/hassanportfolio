@@ -1,0 +1,24 @@
+/* Footer.css */
+.footer {
+    background-color:  #061d5e;  /* Dark background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  
+  .footer p {
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  /* Optional: Hover effect for the copyright text */
+  .footer p:hover {
+    color: #93c5fd;
+    cursor: pointer;
+  }
+  

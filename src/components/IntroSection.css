@@ -1,0 +1,94 @@
+/* Container for the intro section */
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: #0a1a46; /* Blue Background */
+    color: white; /* Text color */
+    font-family: Arial, sans-serif;
+}
+
+/* Left side - Text */
+.intro-left {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.intro-left p {
+    font-size: 1.4em;
+}
+
+.intro-left .highlight {
+    font-weight: bold;
+    color: rgb(140, 0, 140);
+}
+
+.intro-left .purple {
+    font-weight: bold;
+    color: rgb(140, 0, 140); /* Purple color for 'website' and 'web applications' */
+}
+
+/* Social Media Links */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: rgb(140, 0, 140); /* Purple hover effect */
+}
+
+.social-icon {
+    font-size: 1.5em;
+}
+
+/* Resume Button */
+.intro-left .resume-button {
+    background-color:  rgb(140, 0, 140); /* Purple color for button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.intro-left .resume-button:hover {
+    background-color: #7e22ce; /* Lighter purple on hover */
+}
+
+/* Right side - Image */
+.intro-right {
+    flex: 1;
+    text-align: right;
+    padding-right: 60px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.line{
+    border: none;
+    border-top: 3px solid rgb(140, 0, 140); /* Purple line */
+    margin-top: 0px;
+    width: 100%; /* Full width of the container */
+}

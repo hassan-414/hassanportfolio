@@ -1,0 +1,100 @@
+/* Container for the service section */
+.service-section {
+    padding: 80px 50px;
+    background-color: #0a1a46; /* Blue Background (same as intro section) */
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: rgb(140, 0, 140); /* Purple (same as intro section) */
+  }
+  
+  /* Grid Layout for Services */
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  /* Individual Service Card */
+  .service-card {
+    background-color: white;
+    color: #0a1a46;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Service Icon */
+  .service-icon {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgb(140, 0, 140); /* Purple */
+  }
+  
+  /* Service Title */
+  .service-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Service Description */
+  .service-description {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  /* Media Query for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2em; /* Smaller font for mobile screens */
+      margin-bottom: 30px;
+    }
+  
+    /* Grid Layout adjustment for mobile */
+    .service-grid {
+      grid-template-columns: 1fr; /* 1 column on mobile */
+      gap: 20px;
+    }
+  
+    /* Adjust card padding for smaller screens */
+    .service-card {
+      padding: 20px;
+    }
+  
+    /* Adjust icon size for mobile */
+    .service-icon {
+      font-size: 2em; /* Smaller icons */
+    }
+  
+    /* Adjust title and description font sizes */
+    .service-title {
+      font-size: 1.3em;
+    }
+  
+    .service-description {
+      font-size: 0.9em;
+    }
+  }
+  
+  .line{
+    border: none;
+    border-top: 3px solid rgb(140, 0, 140); /* Purple line */
+    margin-top: 0px;
+    width: 100%; /* Full width of the container */
+}

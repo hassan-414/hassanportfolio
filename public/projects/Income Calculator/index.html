@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income and Expense Calculator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 40px;
+            background-color: #f4f4f4;
+            flex-wrap: wrap;
+        }
+
+        #calculator {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 10px solid #3498db; 
+            border-radius: 15px; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            background-color: #ecf0f1; 
+        }
+
+        label {
+            display: inline-block;
+            text-align: right;
+            width: 100px;
+            margin-right: 10px;
+            color: #3498db; 
+        }
+
+        input {
+            width: calc(100% - 120px);
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 2px solid #3498db; 
+            border-radius: 5px; 
+            display: inline-block;
+        }
+
+        button {
+            background-color: #2ecc71; 
+            color: white;
+            font-size: large;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+
+        #balance {
+            color: #2c3e50; 
+            font-size: large;
+            margin-top: 15px;
+        }
+
+        .negative-balance {
+            color: #e74c3c; 
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <h1 style="color: #3498db;">Income and Expense Calculator</h1>
+        <label for="income">Income:</label><input type="number" id="income" placeholder="Enter your income">
+        <label for="expenses">Expenses:</label><input type="number" id="expenses" placeholder="Enter your expenses">
+        <button onclick="calculateBalance()">Calculate Balance</button>
+
+        <h3 id="balance">Balance: Rs 1000.00</h3>
+    </div>
+
+    <script>
+        const constantBalance = 1000;
+
+        function calculateBalance() {
+            let income = parseInt(document.getElementById("income").value) || 0;
+            let expenses = parseInt(document.getElementById("expenses").value) || 0;
+
+            let balance = constantBalance + income - expenses;
+            let balanceElement = document.getElementById("balance");
+
+            if (balance < constantBalance) {
+                balanceElement.classList.add("negative-balance");
+            } else {
+                balanceElement.classList.remove("negative-balance");
+            }
+
+            balanceElement.textContent = "Balance: Rs " + balance.toFixed(2);
+        }
+    </script>
+</body>
+</html>

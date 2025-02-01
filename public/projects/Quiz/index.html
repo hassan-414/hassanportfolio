@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="quiz-container">
+        <h1>Quiz App</h1>
+        <form id="quiz-form">
+            <div id="question1">
+                <h2>Question  No:1</h2>
+                <p>What is the capital of Pakistan?</p>
+                <label>
+                    <input type="radio" name="q1" value="a"> a) Islamabad
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="b"> b) Larachi
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="c"> c) Larkana
+                </label>
+            </div>
+
+            <div id="question2">
+                <h2>Question No:2</h2>
+                <p>What is 2 - 2?</p>
+                <label>
+                    <input type="radio" name="q2" value="a"> a) 3
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="b"> b) 0
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="c"> c) 5
+                </label>
+            </div>
+
+            <div id="question3">
+                <h2>Question No:3</h2>
+                <p>What is the abbrevation of html?</p>
+                <label>
+                    <input type="radio" name="q3" value="a"> a) happy time month lenght
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="b"> b) hyper text markup languge
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="c"> c) hyper text programing language
+                </label>
+            </div>
+
+            <input type="submit" value="submit">
+        </form>
+        <div id="results" style="display: none;">
+            <h2>Results</h2>
+            <p id="score">Score: 0/3</p>
+        </div>
+    </div>
+
+    <script>
+        var quizForm = document.getElementById('quiz-form');
+        var resultsContainer = document.getElementById('results');
+        var scoreContainer = document.getElementById('score');
+        
+        quizForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            var answers = {
+                q1: "a",
+                q2: "b",
+                q3: "b"
+            };
+
+            let score = 0;
+
+            for (var questionId in answers) {
+                var selectedAnswer = document.querySelector(`input[name=${questionId}]:checked`);
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === answers[questionId]) {
+                        score++;
+                    }
+                }
+            }
+            scoreContainer.textContent = `Score: ${score}/3`;
+            resultsContainer.style.display = 'block';
+        });
+    </script>
+    
+</body>
+</html>

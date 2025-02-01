@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Watchistaan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="D:\KIT Web Dev Course\JS Task\index.html" class="logo">
+            <img src="assets/logo.png"  alt="Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="C:\Users\Dell\Desktop\Portfolio\my-portfolio\public\projects\Watchistaan js\index.html">Home</a></li>
+            <li><a href="C:\Users\Dell\Desktop\Portfolio\my-portfolio\public\projects\Watchistaan js\about-us.html">About</a></li>
+            <li><a href="C:\Users\Dell\Desktop\Portfolio\my-portfolio\public\projects\Watchistaan js\contact.html">Contact</a></li>
+            <li><a href="C:\Users\Dell\Desktop\Portfolio\my-portfolio\public\projects\Watchistaan js\shop.html">Shop</a></li>
+        </ul>
+    </nav>
+    
+        <div class="banner">
+            <img src="assets/banner.png" alt="banner">
+            <p><b>Welcome to Watchistaan!</b></p>
+            <h2><b>Every Watch, A New Story.</b></h2>
+            <div class="btn">
+                <button><a href="D:\KIT Web Dev Course\JS Task\shop.html">Shop Now!</a></button>
+            </div>
+        </div>
+        
+    <div class="arrivals">
+        <p>New Arrivals.</p>
+        <div class="boxes">
+            <div class="box">
+                <img src="assets/ch silver.jpg" alt="arrival-1">
+                <p class="price">₨ 3,999</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="assets/universe blue.jpg" alt="arrival-2">
+                <p class="price">₨ 2,799</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="assets/micai brown.jpg" alt="arrival-3">
+                <p class="price">₨ 2,799</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="assets/ch gold.jpg" alt="arrival-4">
+                <p class="price">₨ 3,999</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <a href="D:\KIT Web Dev Course\JS Task\shop.html"><button class="view-all">View All</button></a>
+    </div>
+    
+    <div class="why-choose">
+        <h2>About Us</h2>
+        <div class="features">
+            <div class="feature">
+                <p>Premium Quality Watches.</p>
+            </div>
+            <div class="feature">
+                <p>Heavy weight of Watches.</p>
+            </div>
+            <div class="feature">
+                <p>Fast / Free Shipping</p>
+            </div>
+            <div class="feature">
+                <p>Excellent Customer Support</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <h3>Enter Your Details</h3>
+            <form id="orderForm">
+                <input type="text" placeholder="Name" id="name" required>
+                <input type="text" placeholder="Address" id="address" required>
+                <input type="text" placeholder="Phone Number" id="phone" required>
+                <input type="email" placeholder="Email" id="email" required>
+                <p>Payment: Cash on Delivery</p>
+                <button type="submit" class="close">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="Watchistaan Logo">
+                </a>
+            </div>
+            <div class="footer-center">
+                <h2>Follow us for the latest updates</h2> 
+            </div>
+            <div class="footer-right">
+                <p>Email: info@watchistaan.com</p>
+                <p>Number: 03002327711</p>
+                <p>&copy; 2024 Watchistaan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        
+        const modal = document.getElementById('orderModal');
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        const orderForm = document.getElementById('orderForm');
+
+        
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modal.style.display = 'flex'; // Show modal
+            });
+        });
+
+        // Close modal and log data on form submission
+        orderForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent form from reloading the page
+
+            // Collect user input
+            const name = document.getElementById('name').value;
+            const address = document.getElementById('address').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+
+            // Log details to the console
+            console.log(`Name: ${name}`);
+            console.log(`Address: ${address}`);
+            console.log(`Phone: ${phone}`);
+            console.log(`Email: ${email}`);
+
+            // Close the modal
+            modal.style.display = 'none';
+
+            // Optionally, show a confirmation alert
+            alert('Your order has been placed successfully!');
+        });
+
+        // Close modal if user clicks outside of it
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

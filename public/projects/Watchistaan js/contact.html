@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+              
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: black; 
+}
+
+.logo img {
+    height: 130px; 
+    width: auto; 
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; 
+    flex: 1; 
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px; 
+    font-family: Arial, sans-serif;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid rgb(222, 215, 215);
+    color: greenyellow;
+}
+
+/* Contact Form Section */
+.contact-container {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .submit-btn {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: greenyellow;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-left img {
+    height: 150px; 
+}
+
+.footer-center {
+    text-align: center;
+    flex: 1;
+}
+
+.footer-right {
+    text-align: right;
+    font-size: 100px;
+}
+
+.footer-right p {
+    margin: 5px 0;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+    </style>
+
+<script>
+
+    function handleFormSubmit(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        console.log('Name:', name);
+        console.log('Email:', email);
+        console.log('Phone:', phone);
+        console.log('Message:', message);
+    }
+</script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="D:\KIT Web Dev Course\JS Task\index.html" class="logo">
+            <img src="assets/logo.png"  alt="Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="D:\KIT Web Dev Course\JS Task\index.html">Home</a></li>
+            <li><a href="D:\KIT Web Dev Course\JS Task\about-us.html">About</a></li>
+            <li><a href="D:\KIT Web Dev Course\JS Task\contact.html">Contact</a></li>
+            <li><a href="D:\KIT Web Dev Course\JS Task\shop.html">Shop</a></li>
+        </ul>
+    </nav>
+   
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out to us!</p>
+
+        <form id="contact-form" class="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="phone">Your Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Write your message"></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="Watchistaan Logo">
+                </a>
+            </div>
+            <div class="footer-center">
+                <p>Follow us for the latest updates</p> 
+            </div>
+            <div class="footer-right">
+                <p>Email: info@watchistaan.com</p>
+                <p>Number: 03002327711</p>
+                <p>&copy; 2024 Watchistaan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', handleFormSubmit);
+    </script>
+</body>
+</html>
