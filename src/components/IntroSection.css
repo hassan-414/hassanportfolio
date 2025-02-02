@@ -96,10 +96,15 @@
 /* Mobile View */
 @media (max-width: 768px) {
     .intro-section {
-     padding: 20px;
+     padding: 10px;
     }
     .intro-right{
         padding-right: 0px;
     }
-    
+    .profile-pic{
+        border-radius: 50px;
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+    }
 }
