@@ -13,7 +13,7 @@
 .intro-left {
     flex: 1;
     text-align: left;
-    padding: 20px;
+    padding-left: 0px;
 }
 
 .intro-left p {
@@ -76,7 +76,7 @@
 .intro-right {
     flex: 1;
     text-align: right;
-    padding-right: 60px;
+    padding-right: 160px;
 }
 
 .profile-pic {
@@ -91,4 +91,15 @@
     border-top: 3px solid rgb(140, 0, 140); /* Purple line */
     margin-top: 0px;
     width: 100%; /* Full width of the container */
+}
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .intro-section {
+     padding: 80px;
+    }
+    .intro-right{
+        padding-right: -120px;
+    }
 }
