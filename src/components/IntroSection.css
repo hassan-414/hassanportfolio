@@ -96,7 +96,7 @@
 /* Mobile View */
 @media (max-width: 768px) {
     .intro-section {
-     padding: 40px;
+     padding: 20px;
     }
     .intro-right{
         padding-right: 0px;
