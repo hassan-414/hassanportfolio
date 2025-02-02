@@ -39,21 +39,32 @@ body {
   color: #93c5fd; /* Lighter Blue */
 }
 
+
 /* Mobile View */
 @media (max-width: 768px) {
   .navbar-right {
     position: absolute;
-    top: 70px;
+    top: 70px; /* Adjust this value based on your navbar height */
     left: 0;
     right: 0;
     background-color: #061d5e;
     flex-direction: column;
     padding: 10px 0;
     display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure it appears above other content */
   }
 
   .navbar-right.open {
-    display: block; /* Show the menu when hamburger is clicked */
+    display: flex; /* Show the menu when hamburger is clicked */
+    flex-direction: column;
+    align-items: center; /* Center align items */
+  }
+
+  .navbar-right a {
+    margin: 10px 0; /* Add spacing between links */
+    padding: 10px 20px; /* Add padding for better touch targets */
+    width: 100%; /* Full width for each link */
+    text-align: center; /* Center text */
   }
 
   .hamburger {
@@ -62,12 +73,7 @@ body {
     color: white;
     background: none;
     border: none;
-  }
-
-  .nav-link {
-    padding: 10px 20px;
-    text-align: center;
-    width: 100%;
+    cursor: pointer;
+    z-index: 1001; /* Ensure hamburger is above the menu */
   }
 }
-
