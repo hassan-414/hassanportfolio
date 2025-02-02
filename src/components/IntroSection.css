@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 120px;
+    padding: 100px;
     background-color: #0a1a46; /* Blue Background */
     color: white; /* Text color */
     font-family: Arial, sans-serif;
@@ -12,7 +12,6 @@
 /* Left side - Text */
 .intro-left {
     flex: 1;
-    text-align: left;
     padding-left: 0px;
 }
 
@@ -97,7 +96,7 @@
 /* Mobile View */
 @media (max-width: 768px) {
     .intro-section {
-     padding: 80px;
+     padding: 40px;
     }
     .intro-right{
         padding-right: 0px;
