@@ -107,4 +107,7 @@
         height: 300px;
         object-fit: cover;
     }
+    .intro-left p {
+        font-size: 1.2em;
+    }
 }
