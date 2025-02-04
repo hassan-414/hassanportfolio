@@ -13,7 +13,7 @@ const Portfolio = () => {
     { id: 5, title: 'Rock,Papar Game', description: 'Rock, Paper and Scissor game by Html, Css and Java script', imgSrc: '/images/rock,paper,scissor.jpg', projectLink: '/projects/Rock paper secissor/index.html' },
     { id: 6, title: 'Expences Calculator', description: 'Expences Calculator by Html, Css and Java script.', imgSrc: '/images/todo.jpg', projectLink: '/projects/Income Calculator/index.html' },
     { id: 7, title: 'Watchistaan', description: 'Watchistaan web page by Html, Css and React.', imgSrc: '/images/watchistaan js.jpg', projectLink: '/projects/Watchistaan js/index.html' },
-    { id: 8, title: 'Sports Car Website', description: 'Sports Car Web Project in React + Vite.', imgSrc: '/images/Cars.png',   projectLink: 'https://react-test-cyan-three.vercel.app/'},
+    { id: 8, title: 'Sports Car Website', description: 'Sports Car Web Project in React + Vite.', imgSrc: '/images/sports-car.jpg',   projectLink: 'https://react-test-cyan-three.vercel.app/'},
 
   ];
 
@@ -53,3 +53,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
