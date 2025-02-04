@@ -7,13 +7,14 @@ const Portfolio = () => {
   // List of projects with image, name, description, and project link
   const projects = [
     { id: 1, title: 'Watchistaan ', description: 'My First Client Project on Wordpress.', imgSrc: '/images/watchistaan.jpg', projectLink: 'https://watchistaan.com/' },
-    { id: 2, title: 'Netflix Clone', description: '1 page clone of Netflix by Html and Css.', imgSrc: '/images/Net clone.jpg', projectLink: '/projects/Netflix clone/index.html' },
-    { id: 3, title: 'Blog Web page', description: 'Blog templete by Html, Css.', imgSrc: '/images/mac.jpg', projectLink: '/projects/Blog/index1.html' },
-    { id: 4, title: 'Paid Courses ', description: 'Promotion of Paid Courses by Html and Css.', imgSrc: '/images/course.jpg', projectLink: '/projects/Course/moiz.html' },
-    { id: 5, title: 'Quiz App', description: 'Quiz app by Html and Java script.', imgSrc: '/images/quiz.jpg', projectLink: '/projects/Quiz/index.html' },
-    { id: 6, title: 'Rock,Papar Game', description: 'Rock, Paper and Scissor game by Html, Css and Java script', imgSrc: '/images/rock,paper,scissor.jpg', projectLink: '/projects/Rock paper secissor/index.html' },
-    { id: 7, title: 'Expences Calculator', description: 'Expences Calculator by Html, Css and Java script.', imgSrc: '/images/todo.jpg', projectLink: '/projects/Income Calculator/index.html' },
-    { id: 8, title: 'Watchistaan', description: 'Watchistaan web page by Html, Css and React.', imgSrc: '/images/watchistaan js.jpg', projectLink: '/projects/Watchistaan js/index.html' },
+    { id: 2, title: 'Blog Web page', description: 'Blog templete by Html, Css.', imgSrc: '/images/mac.jpg', projectLink: '/projects/Blog/index1.html' },
+    { id: 3, title: 'Paid Courses ', description: 'Promotion of Paid Courses by Html and Css.', imgSrc: '/images/course.jpg', projectLink: '/projects/Course/moiz.html' },
+    { id: 4, title: 'Quiz App', description: 'Quiz app by Html and Java script.', imgSrc: '/images/quiz.jpg', projectLink: '/projects/Quiz/index.html' },
+    { id: 5, title: 'Rock,Papar Game', description: 'Rock, Paper and Scissor game by Html, Css and Java script', imgSrc: '/images/rock,paper,scissor.jpg', projectLink: '/projects/Rock paper secissor/index.html' },
+    { id: 6, title: 'Expences Calculator', description: 'Expences Calculator by Html, Css and Java script.', imgSrc: '/images/todo.jpg', projectLink: '/projects/Income Calculator/index.html' },
+    { id: 7, title: 'Watchistaan', description: 'Watchistaan web page by Html, Css and React.', imgSrc: '/images/watchistaan js.jpg', projectLink: '/projects/Watchistaan js/index.html' },
+    { id: 8, title: 'Sports Car Website', description: 'Sports Car Web Project in React + Vite.', imgSrc: '/images/Cars.png',   projectLink: 'https://react-test-cyan-three.vercel.app/'},
+
   ];
 
   const handleClick = (project) => {
