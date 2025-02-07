@@ -1,7 +1,7 @@
 .contact-container {
   background: #0a1a46;
   color: white;
-  padding: 10px;
+  padding: 50px; /* Latest update applied */
   text-align: center;
 }
 
@@ -9,6 +9,7 @@
   font-size: 50px;
   color: rgb(140, 0, 140);
   margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif; /* Latest update applied */
 }
 
 .contact-content {
@@ -29,9 +30,11 @@
 .contact-left h2 {
   font-size: 35px;
   color: rgb(140, 0, 140);
+  font-family: sans-serif; /* Latest update applied */
 }
 
 .contact-left p {
+  margin-top: 15px; /* Latest update applied */
   font-size: 20px;
   color: white;
 }
