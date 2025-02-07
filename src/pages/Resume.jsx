@@ -8,11 +8,11 @@ const Resume = () => {
     <div className="resume-container">
       <h2>My Resume</h2>
       <iframe 
-        src="/resume.pdf" 
+        src="/resume1.pdf" 
         className="resume-frame"
         title="Resume"
       ></iframe>
-      <a href="/resume.pdf" download className="download-btn">
+      <a href="/resume1.pdf" download className="download-btn">
         Download Resume
       </a>
     </div>
