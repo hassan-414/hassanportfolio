@@ -1,18 +1,21 @@
 /* Container for the service section */
 .service-section {
-    padding: 80px 50px;
+    padding: 100px 80px;
     background-color: #0a1a46; /* Blue Background (same as intro section) */
     color: white;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
   }
   
   /* Section Title */
   .section-title {
-    font-size: 2.5em;
+    font-size: 50px;
+    padding-bottom: 20px;
     font-weight: bold;
     margin-bottom: 40px;
     color: rgb(140, 0, 140); /* Purple (same as intro section) */
+    
   }
   
   /* Grid Layout for Services */
@@ -51,6 +54,7 @@
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 15px;
+    
   }
   
   /* Service Description */
