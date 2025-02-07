@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>© 2025 Watchistan. All rights reserved.</p>
+        <p>© 2025 Hassan Portfolio. All rights reserved.</p>
         <p>Designed by Hassan Ahmed Khan</p>
       </div>
     </footer>
