@@ -1,14 +1,14 @@
 .skills-section {
   padding: 100px 20px;
-  background-color: #0a1a46;
+  background-color: rgb(214, 236, 251);
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .section-title {
   font-size: 3em;
   margin-bottom: 30px;
-  color: rgb(140, 0, 140);
+  color: #03186e;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -40,7 +40,7 @@
 
 .skill-icon:hover {
   transform: scale(1.1);
-  background-color: rgb(140, 0, 140);
+  background-color: rgb(113, 189, 239);
 }
 
 /* Circular Progress Bar */
@@ -53,7 +53,7 @@
 
 .circle-bg {
   fill: none;
-  stroke: rgba(255, 255, 255, 0.2);
+  stroke: white;
   stroke-width: 8;
 }
 
@@ -69,7 +69,7 @@
 .percentage-text {
   font-size: 16px;
   font-weight: bold;
-  fill: white;
+  fill: black;
   text-anchor: middle;
   dominant-baseline: middle;
 }
