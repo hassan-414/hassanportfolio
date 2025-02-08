@@ -1,13 +1,13 @@
 .contact-container {
-  background: #0a1a46;
-  color: white;
+  background:  rgb(214, 236, 251);
+  color: black;
   padding: 50px; /* Latest update applied */
   text-align: center;
 }
 
 .contact-heading {
   font-size: 50px;
-  color: rgb(140, 0, 140);
+  color:  #03186e;
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif; /* Latest update applied */
 }
@@ -29,14 +29,14 @@
 
 .contact-left h2 {
   font-size: 35px;
-  color: rgb(140, 0, 140);
+  color:  #03186e;
   font-family: sans-serif; /* Latest update applied */
 }
 
 .contact-left p {
   margin-top: 15px; /* Latest update applied */
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 .contact-right {
@@ -63,7 +63,7 @@
 }
 
 .contact-form button {
-  background: linear-gradient(to right, rgb(140, 0, 140), rgb(140, 0, 140));
+  background: #03186e;
   color: white;
   padding: 15px;
   border: none;
@@ -73,6 +73,7 @@
 }
 
 .contact-form button:hover {
+  background-color: rgb(113, 189, 239);
   opacity: 0.8;
 }
 
@@ -86,7 +87,7 @@
   .contact-left,
   .contact-right {
     width: 110%;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 20px; /* Adjust margin for better spacing */
   }
 
