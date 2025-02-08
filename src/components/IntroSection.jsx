@@ -9,7 +9,7 @@ function IntroSection() {
   useEffect(() => {
     const typed = new Typed(typingRef.current, {
       strings: ["Web Sites.", "Web Applications."], // Words to be typed
-      typeSpeed: 70, // Speed of typing
+      typeSpeed: 80, // Speed of typing
       backSpeed: 50, // Speed of deleting
       backDelay: 1000, // Pause before deleting
       loop: true, // Repeat animation
