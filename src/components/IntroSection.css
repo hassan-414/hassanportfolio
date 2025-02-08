@@ -103,8 +103,8 @@
     }
     .profile-pic{
         border-radius: 50px;
-        width: 200px;
-        height: 300px;
+        width: 150px;
+        height: 250px;
         object-fit: cover;
     }
     .intro-left p {
