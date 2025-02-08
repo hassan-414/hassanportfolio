@@ -1,24 +1,24 @@
-/* Container for the service section */
+
 .service-section {
     padding: 100px 80px;
-    background-color: #0a1a46; /* Blue Background (same as intro section) */
-    color: white;
+    background-color:  rgb(214, 236, 251);
+    color: black;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 
   }
   
-  /* Section Title */
+
   .section-title {
     font-size: 50px;
     padding-bottom: 20px;
     font-weight: bold;
     margin-bottom: 40px;
-    color: rgb(140, 0, 140); /* Purple (same as intro section) */
+    color: #03186e; 
     
   }
   
-  /* Grid Layout for Services */
+ 
   .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -26,7 +26,7 @@
     justify-items: center;
   }
   
-  /* Individual Service Card */
+ 
   .service-card {
     background-color: white;
     color: #0a1a46;
@@ -42,14 +42,14 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   }
   
-  /* Service Icon */
+ 
   .service-icon {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: rgb(140, 0, 140); /* Purple */
+    color: #03186e;
   }
   
-  /* Service Title */
+  
   .service-title {
     font-size: 1.5em;
     font-weight: bold;
@@ -57,7 +57,7 @@
     
   }
   
-  /* Service Description */
+  
   .service-description {
     font-size: 1em;
     line-height: 1.5;
@@ -66,27 +66,27 @@
   /* Media Query for Mobile Responsiveness */
   @media (max-width: 768px) {
     .section-title {
-      font-size: 2em; /* Smaller font for mobile screens */
+      font-size: 2em;
       margin-bottom: 30px;
     }
   
-    /* Grid Layout adjustment for mobile */
+    
     .service-grid {
-      grid-template-columns: 1fr; /* 1 column on mobile */
+      grid-template-columns: 1fr;
       gap: 20px;
     }
   
-    /* Adjust card padding for smaller screens */
+   
     .service-card {
       padding: 20px;
     }
   
-    /* Adjust icon size for mobile */
+   
     .service-icon {
-      font-size: 2em; /* Smaller icons */
+      font-size: 2em; 
     }
   
-    /* Adjust title and description font sizes */
+    
     .service-title {
       font-size: 1.3em;
     }
@@ -98,7 +98,7 @@
   
   .line{
     border: none;
-    border-top: 3px solid rgb(140, 0, 140); /* Purple line */
+    border-top: 3px solid #061d5e;
     margin-top: 0px;
-    width: 100%; /* Full width of the container */
+    width: 100%; 
 }
