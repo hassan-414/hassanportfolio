@@ -26,12 +26,9 @@ function IntroSection() {
       <div className="intro-section">
         <div className="intro-left">
           <p>
-            Hi, My name is <span className="highlight">Hassan Ahmed Khan</span>.
+          Hi, I’m  <span className="highlight"> Hassan Ahmed Khan </span>– a passionate <span className="highlight">Frontend Developer</span> crafting beautiful and user-friendly web experiences. <br/>Turning ideas into interactive, responsive, and engaging websites with modern web technologies.
             <br />
-            I am a <span className="highlight">Frontend Developer</span>.
-            
-            <br />
-            I’m passionate about creating amazing{" "}
+            I’m also work about creating amazing{" "}
             <span ref={typingRef} className="purple"></span>
           </p>
           <div className="social-icons">
