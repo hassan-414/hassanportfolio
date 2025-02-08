@@ -53,7 +53,9 @@ function IntroSection() {
           <img src="/my-profile2.jpg" alt="Profile" className="profile-pic" />
         </div>
       </div>
-      <div className="line"></div>
+      <div className="line">
+        
+      </div>
     </>
   );
 }
