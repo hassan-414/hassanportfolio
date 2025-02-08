@@ -1,31 +1,33 @@
-
 .portfolio {
     background-color: #f9f9f9;
     padding: 60px 20px;
     text-align: center;
-    background-color: #0a1a46;
+    background-color: rgb(214, 236, 251);
   }
   
-  /* Title styling */
+ 
   .portfolio-title {
     font-size: 50px;
-    color: rgb(140, 0, 140);
+    color: #061d5e;
     margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    
+
   }
   
-  /* Portfolio items grid with 2 projects per row */
+  
   .portfolio-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 projects per row */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
     justify-items: center;
   }
   
-  /* Portfolio item card */
+
   .portfolio-item {
     width: 100%;
     max-width: 300px;
-    background-color:rgb(248, 244, 205);
+    background-color:rgb(205, 223, 248);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 8px;
@@ -44,7 +46,7 @@
   
   .project-header h3 {
     font-size: 24px;
-    color: rgb(140, 0, 140);
+    color: #061d5e;
   }
   
   /* PortfolioSection.css */
@@ -60,11 +62,11 @@
   
   .project-header p {
     font-size: 14px;
-    color: #777;
+    color: black;
   }
   
   .project-header button {
-    background-color:  rgb(140, 0, 140);;
+    background-color: #061d5e;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -76,64 +78,14 @@
   }
   
   .project-header button:hover {
-    background-color:  #7e22ce;
+    background-color: rgb(113, 189, 239);
   }
-  
-  /* Project details view */
-  .project-details {
-    display: flex;
-    margin-top: 30px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .project-details .left {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .project-details .right {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .project-details img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .project-details h3 {
-    font-size: 30px;
-    color: rgb(140, 0, 140);
-  }
-  
-  .project-details p {
-    font-size: 16px;
-    color: #777;
-    margin-top: 10px;
-  }
-  
-  .project-details button {
-    background-color: rgb(140, 0, 140);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .project-details button:hover {
-    background-color:  #7e22ce;
-  }
+ 
   
   /* Mobile responsiveness */
   @media (max-width: 768px) {
     .portfolio-items {
-      grid-template-columns: 1fr; /* 1 project per row on smaller screens */
+      grid-template-columns: 1fr; 
     }
   
     .project-details {
@@ -148,7 +100,7 @@
   
   .line{
     border: none;
-    border-top: 3px solid rgb(140, 0, 140); /* Purple line */
+    border-top: 3px solid #061d5e ;
     margin-top: 0px;
-    width: 100%; /* Full width of the container */
+    width: 100%; 
 }
